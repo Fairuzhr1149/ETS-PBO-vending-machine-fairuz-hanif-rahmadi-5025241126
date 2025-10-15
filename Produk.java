@@ -48,7 +48,7 @@ public class Produk {
         }
 
         if (barang.stok <= 0) {
-            System.out.println("⚠️ Stok " + nama + " telah habis. Mohon pilih produk lain.");
+            System.out.println("Stok " + nama + " telah habis. Mohon pilih produk lain.");
             return;
         }
 
@@ -58,10 +58,10 @@ public class Produk {
 
         if (success) {
             barang.stok--;
-            System.out.println("✅ Terima kasih! Produk " + barang.namaProduk + " telah dikeluarkan.");
+            System.out.println("Terima kasih! Produk " + barang.namaProduk + " telah dikeluarkan.");
             transaksiLog.add(barang.namaProduk + " - Rp" + barang.harga);
         } else {
-            System.out.println("❌ Pembayaran gagal. Transaksi dibatalkan.");
+            System.out.println("Pembayaran gagal. Transaksi dibatalkan.");
         }
     }
 
@@ -84,7 +84,7 @@ public class Produk {
             return;
         }
         barang.stok += jumlah;
-        System.out.println("✅ Produk " + barang.namaProduk + " berhasil ditambah stoknya menjadi " + barang.stok);
+        System.out.println("Produk " + barang.namaProduk + " berhasil ditambah stoknya menjadi " + barang.stok);
     }
 }
 
