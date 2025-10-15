@@ -8,14 +8,14 @@ public class PaySystem {
         int bayar = input.nextInt();
 
         if (bayar < harga) {
-            System.out.println("❌ Uang tidak cukup. Diperlukan Rp" + harga);
+            System.out.println("Uang tidak cukup. Diperlukan Rp" + harga);
             return false;
         } else if (bayar == harga) {
-            System.out.println("✅ Pembayaran berhasil tanpa kembalian.");
+            System.out.println("Pembayaran berhasil tanpa kembalian.");
             return true;
         } else {
             int kembali = bayar - harga;
-            System.out.println("✅ Pembayaran berhasil! Kembalian: Rp" + kembali);
+            System.out.println("Pembayaran berhasil! Kembalian: Rp" + kembali);
             return true;
         }
     }
