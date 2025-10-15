@@ -13,10 +13,10 @@ public class Admin {
         String pass = input.nextLine();
 
         if (user.equals(USERNAME) && pass.equals(PASSWORD)) {
-            System.out.println("✅ Login berhasil. Selamat datang, admin.");
+            System.out.println("Login berhasil. Selamat datang, admin.");
             adminMenu();
         } else {
-            System.out.println("❌ Login gagal. Username atau password salah.");
+            System.out.println("Login gagal. Username atau password salah.");
         }
     }
 
